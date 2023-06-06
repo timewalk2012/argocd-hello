@@ -1,0 +1,15 @@
+replicaCount: 1
+
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+serviceAccount:
+  create: false
+  annotations: {}
+  name: ""
+
+service:
+  type: NodePort
+  port: 8090
