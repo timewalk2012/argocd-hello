@@ -7,4 +7,4 @@ spec:
     app: argocd-hello
   ports:
     - port: 80
-      targetPort: 8090
+      targetPort: 80
