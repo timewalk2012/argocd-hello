@@ -18,4 +18,4 @@ spec:
         - name: go-hello-http
           image: "{{ .Values.image.repository }}:{{ default .Values.image.tag }}"
           ports:
-            - http: 8090
+            - containerPort: 8090
