@@ -12,5 +12,5 @@ spec:
   project: default
   source:
     path: my-app-of-apps/children/httpd
-    repoURL: https://github.com/test/repo.git
+    repoURL: https://github.com/god1097/argocd-hello.git
     targetRevision: HEAD
