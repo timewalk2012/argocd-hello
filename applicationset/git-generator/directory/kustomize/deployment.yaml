@@ -13,10 +13,8 @@ spec:
         deployment: hello
     spec:
       containers:
-      - name: the-container
-        image: monopole/hello:1
-        command: ["/hello",
-                  "--port=8080",
-                  "--enableRiskyFeature=false"]
-        ports:
-        - containerPort: 8080
+      - name: busybox
+        image: busybox
+        command:
+        - sleep
+        - "3600"
