@@ -1,0 +1,6 @@
+my_account: "qwerty"
+my_id: "qwerty"
+cluster:
+  owner: "prod"
+  name: "prod"
+  address: "https://kubernetes.default.svc"

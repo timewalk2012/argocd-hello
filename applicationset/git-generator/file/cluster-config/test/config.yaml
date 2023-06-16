@@ -1,0 +1,6 @@
+my_account: "qazwsx"
+my_id: "qazwsx"
+cluster:
+  owner: "test"
+  name: "test"
+  address: "https://kubernetes.default.svc"
