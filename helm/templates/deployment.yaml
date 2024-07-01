@@ -15,7 +15,7 @@ spec:
         app: argocd-hello
     spec:
       containers:
-        - name: go-hello-http
+        - name: go-hello
           image: "{{ .Values.image.repository }}:{{ default .Values.image.tag }}"
           ports:
             - containerPort: 80
