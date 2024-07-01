@@ -1,7 +1,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: argocd-service
+  name: argocd-hello
 spec:
   selector:
     app: argocd-hello
