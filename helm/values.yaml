@@ -6,7 +6,7 @@ container:
   name: nginx-hello
   port: 80
 service:
-  name: nx-hello-svc
+  name: nginx-hello-svc
   
 
 image:
