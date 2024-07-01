@@ -1,6 +1,6 @@
 deployment:
-  name: nginx-hello-deploy
-  labels: nginx-hello-deploy
+  name: nginx-hello-app
+  labels: nginx-hello-app
   replicas: 1
 container:
   name: nginx-hello
