@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: argocd-hello
+  name: "{{ .Values.deployment.name }}"
   labels:
-    app: argocd-hello
+    app: "{{ .Values.deployment.labels }}"
 spec:
-  replicas: 1
+  replicas: "{{ .Values.deployment.replicas }}"
   selector:
     matchLabels:
-      app: argocd-hello
+      app: "{{ .Values.deployment.name }}"
   template:
     metadata:
       labels:
-        app: argocd-hello
+        app: "{{ .Values.deployment.labels }}"
     spec:
       containers:
-        - name: go-hello
+        - name: "{{ .Values.container.name }}"
           image: "{{ .Values.image.repository }}:{{ default .Values.image.tag }}"
           ports:
-            - containerPort: 80
+            - containerPort: "{{ .Values.container.port }}"

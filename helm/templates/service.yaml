@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: argocd-hello
+  name: "{{ .Values.service.name }}"
 spec:
   selector:
-    app: argocd-hello
+    app: "{{ .Values.deployment.labels }}"
   ports:
     - port: 80
       targetPort: 80

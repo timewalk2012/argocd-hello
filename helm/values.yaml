@@ -1,3 +1,14 @@
+deployment:
+  name: nginx-hello-deploy
+  labels: nginx-hello-deploy
+  replicas: 1
+container:
+  name: nginx-hello
+  port: 80
+service:
+  name: nx-hello-svc
+  
+
 image:
   repository: uhub.service.ucloud.cn/ucloud/nginx 
   tag: "latest"
