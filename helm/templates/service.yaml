@@ -1,10 +1,10 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: "{{ .Values.service.name }}"
+  name: {{ .Values.service.name }}
 spec:
   selector:
-    app: "{{ .Values.deployment.labels }}"
+    app: {{ .Values.deployment.labels }}
   ports:
     - port: 80
       targetPort: 80
